@@ -111,14 +111,15 @@
   align-items: center;
   min-height: 48px; 
   color: #fff;
+  text-underline-offset: 0.2em;
 }
 
 
 .footer-links a:hover,
 .footer-links a:focus-visible {
   color: var(--gold);
+  text-decoration-thickness: 2px;
 }
-
 
 .footer-links a:focus-visible {
   outline: 2px solid var(--gold);
