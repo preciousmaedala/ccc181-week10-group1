@@ -11,8 +11,8 @@
    ======================================================================= */
 
 
-/* ---- 1. PHONE (no media query) ---------------------------------------
-   NAVBAR (Flexbox) */
+/* ---- 1. PHONE (no media query) --------------------------------------- */
+  /* NAVBAR (Flexbox) */
 .site-header {
   background: var(--navy);
   color: #fff;
@@ -36,6 +36,12 @@
   color: var(--gold);
   text-decoration: none;
   border-radius: var(--radius);
+}
+
+
+.navbar__brand:hover,
+.navbar__brand:focus-visible {
+  background: var(--navy-hover);
 }
 
 
@@ -71,7 +77,7 @@
   outline-offset: 2px;
 }
 
-
+   /* FOOTER */
 .site-footer {
   background: var(--navy);
   color: #fff;
