@@ -53,7 +53,7 @@
 
 .brand-panel {
   background: var(--navy);
-  color: #fff;
+  color: var(--surface);
   text-align: center;
   padding: 1.5rem 1rem;
   border-radius: var(--radius);
