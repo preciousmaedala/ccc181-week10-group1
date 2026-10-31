@@ -23,15 +23,15 @@ npm run build        # must finish with no errors before you submit
 
 | Item | Your answer |
 | --- | --- |
-| Group number | |
-| Section | |
-| Repository URL | |
+| Group number | Group 1 |
+| Section | IT3-B |
+| Repository URL | https://github.com/preciousmaedala/ccc181-week10-group1 |
 
 ## Members (each member fills in their own row in their own commit)
 
 | Member | Name | GitHub username | CSS file | What I did |
 | --- | --- | --- | --- | --- |
-| 1 (leader) | | | `base.css` | |
+| 1 (leader) | Precious Mae D. Dala | preciousmaedala | `base.css` | Created mobile-first and responsive page layouts in base.css |
 | 2 | | | `nav.css` | |
 | 3 | | | `form.css` | |
 
@@ -40,8 +40,9 @@ npm run build        # must finish with no errors before you submit
 What did the page look like in DevTools phone mode **before** adding the viewport meta tag?
 What changed **after** adding it?
 
-> (write your answer here)
+Before: The page appeared zoomed out and very small in phone mode.
 
+After: The page adjusted to the phone's screen width, making the content easier to read and properly sized.
 ## DevTools test results
 
 | Width | What must be true | Pass? |
@@ -55,10 +56,9 @@ What changed **after** adding it?
 
 Using **Show media queries** and dragging slowly from 360 px to 1280 px, the layout changed at these exact widths:
 
-> (write the widths here, and say whether any width looked broken)
-
+The layout changed at 768px, 1024px, and 1280px as the responsive breakpoints were applied. No major layout issues were observed during testing.
 Screenshots are in `screenshots/` as `360.png`, `768.png`, `1024.png`, `1280.png`.
 
 ## What our group learned (leader writes this last)
 
-> (write your answer here)
+Our group learned how to work together using GitHub, apply mobile-first CSS, and create responsive layouts for different screen sizes. We also learned the importance of teamwork, communication, and reviewing each other's work to build a complete and functional website.
