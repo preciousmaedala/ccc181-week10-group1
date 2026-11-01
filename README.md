@@ -33,7 +33,7 @@ npm run build        # must finish with no errors before you submit
 | --- | --- | --- | --- | --- |
 | 1 (leader) | Precious Mae D. Dala | preciousmaedala | `base.css` | Created mobile-first and responsive page layouts in base.css |
 | 2 | | | `nav.css` | |
-| 3 | | | `form.css` | |
+| 3 | Janel Bactong | janelbactong | `form.css` | Built the login card and form (Flexbox)|
 
 ## Experiment 0: the page without the viewport tag
 
