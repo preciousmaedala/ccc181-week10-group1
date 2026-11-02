@@ -32,7 +32,7 @@ npm run build        # must finish with no errors before you submit
 | Member | Name | GitHub username | CSS file | What I did |
 | --- | --- | --- | --- | --- |
 | 1 (leader) | | | `base.css` | |
-| 2 | | | `nav.css` | |
+| 2 | Jasson Lumacad | jassonlumacad | `nav.css` | Styled the mobile-first navigation bar and footer in nav.css|
 | 3 | | | `form.css` | |
 
 ## Experiment 0: the page without the viewport tag
