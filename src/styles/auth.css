@@ -1,0 +1,33 @@
+/* Authentication and Welcome screen styles */
+
+.welcome-card {
+  width: 100%;
+}
+
+.welcome-card .login-card__title {
+  margin-bottom: 0.75rem;
+}
+
+.welcome-card p {
+  margin-bottom: 1.5rem;
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+
+.welcome-card .btn {
+  width: 100%;
+  min-height: 48px;
+}
+
+.login-form .btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+/* Tablet and larger screens */
+@media (min-width: 768px) {
+  .welcome-card {
+    max-width: 32rem;
+    margin-inline: auto;
+  }
+}
