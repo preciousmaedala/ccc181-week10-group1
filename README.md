@@ -37,8 +37,7 @@ npm run build        # must finish with no errors before you submit
 ## Members (each member fills in their own row in their own commit)
 
 | Member | Name | GitHub username | CSS file | What I did |
-| --- | --- | --- | --- | --- |
-
+|---|---|---|---|---|
 | 1 (leader) | Precious Mae D. Dala | preciousmaedala | `base.css` | Created mobile-first and responsive page layouts in base.css |
 | 2 | Jasson Lumacad | jassonlumacad | `nav.css` | Styled the mobile-first navigation bar and footer in nav.css |
 | 3 | Janel Bactong | janelbactong | `form.css` | Built the login card and form (Flexbox) |
