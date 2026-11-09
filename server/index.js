@@ -21,11 +21,45 @@ app.use(cors({
 }));
 
 app.use(express.json());
+    // JWT authentication middleware
+function authenticateToken(req, res, next) {
+    const authHeader = req.headers.authorization;
+
+    const token = authHeader && authHeader.startsWith("Bearer ")
+        ? authHeader.split(" ")[1]
+        : null;
+
+    if (!token) {
+        return res.status(401).json({
+            error: "Not logged in."
+        });
+    }
+
+    jwt.verify(token, process.env.JWT_SECRET, (err, decoded) => {
+        if (err) {
+            return res.status(401).json({
+                error: "Not logged in."
+            });
+        }
+
+        req.user = decoded;
+        next();
+    });
+}
 
 // Health check
 app.get("/api/v1/health", (req, res) => {
     res.status(200).json({
         status: "ok"
+    });
+});
+
+// Get the currently authenticated user
+app.get("/api/v1/users/me", authenticateToken, (req, res) => {
+    res.status(200).json({
+        id: req.user.id,
+        name: req.user.name,
+        email: req.user.email
     });
 });
 
@@ -86,6 +120,22 @@ app.post("/api/v1/sessions", async (req, res) => {
             name: demoUser.name,
             email: demoUser.email
         }
+    });
+});
+
+// Handle requests to unknown routes
+app.use((req, res) => {
+    res.status(404).json({
+        error: "Not found."
+    });
+});
+
+// Handle unexpected server errors
+app.use((err, req, res, next) => {
+    console.error(err);
+
+    res.status(500).json({
+        error: "Something went wrong."
     });
 });
 
