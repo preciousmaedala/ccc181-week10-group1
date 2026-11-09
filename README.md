@@ -14,10 +14,17 @@ npm run build        # must finish with no errors before you submit
 
 ## Rules
 
-- Edit only the CSS files in `src/styles/` (one member = one file). Do not edit `reset.css`.
-- Plain CSS only. No Tailwind, Bootstrap, Material UI, styled-components, or any UI library.
-- Phone styles first (no media query), then `min-width` queries only. Never `max-width`.
-- Do not edit the `.tsx` files or rename classes. If you must, tell the group first.
+## Rules
+
+- Use plain CSS only. No Tailwind, Bootstrap, Material UI, styled-components, or other UI libraries.
+- Follow a mobile-first design approach.
+- Use `min-width` media queries only. Do not use `max-width`.
+- Use `rem` and `%` units where appropriate.
+- Ensure buttons and interactive elements have a minimum tap target of 48px × 48px.
+- Provide `:focus-visible` styles for interactive elements that have `:hover` styles.
+- Keep `.env` files private. Commit only `.env.example` files.
+- Follow the assigned group responsibilities when modifying project files.
+
 
 ## Group information (fill in)
 
@@ -35,11 +42,6 @@ npm run build        # must finish with no errors before you submit
 | 1 (leader) | Precious Mae D. Dala | preciousmaedala | `base.css` | Created mobile-first and responsive page layouts in base.css |
 | 2 | Jasson Lumacad | jassonlumacad | `nav.css` | Styled the mobile-first navigation bar and footer in nav.css |
 | 3 | Janel Bactong | janelbactong | `form.css` | Built the login card and form (Flexbox) |
-
-| 1 (leader) | Precious Mae D. Dala | preciousmaedala | `base.css` | Created mobile-first and responsive page layouts in base.css |
-| 2 | Jasson Lumacad | jassonlumacad | `nav.css` | Styled the mobile-first navigation bar and footer in nav.css |
-| 3 | Janel Bactong | janelbactong | `form.css` | Built the login card and form (Flexbox)|
-
 
 ## Experiment 0: the page without the viewport tag
 
