@@ -3,22 +3,105 @@
 React + TypeScript starter for the Week 10 group activity. The page is already
 built. Your group's job is the **mobile-first CSS** and the **GitHub teamwork**.
 
-## Run it
+## How to Run the Project
 
-```bash
-npm install
-npm run dev          # open the local URL it prints
-npm run dev:phone    # same, but your phone (same Wi-Fi) can open the Network URL
-npm run build        # must finish with no errors before you submit
-```
+**1. Install Dependencies**
+
+Open a terminal in the project root and run:
+
+    npm install
+
+Install the backend dependencies:
+
+    cd server
+    npm install
+    cd ..
+
+**2. Configure Environment Variables**
+
+  Create the root .env file using the root .env.example.
+
+  Create the backend server/.env file using server/.env.example.
+
+  Do not upload or commit the actual .env files to GitHub.
+
+**3. Start the Backend**
+
+  Open a terminal and run:
+
+    cd server
+    npm start
+
+  The backend runs at:
+
+    http://localhost:3000
+
+**4. Start the Frontend**
+
+  Open a second terminal in the project root and run:
+
+    npm run dev
+
+  Open the local URL provided by Vite, usually:
+
+    http://localhost:5173
+
+**5. Demo Account**
+
+  Use the following credentials to test the login:
+
+    Email: student@campusconnect.test
+
+    Password: Campus26
+
+  A successful login displays the Welcome screen with the name Demo Student.
+
+**6. Build Check**
+
+  To verify the frontend production build, run this command in the project root:
+
+    npm run build
+
+## API Summary
+
+The CampusConnect backend provides the following API endpoints:
+
+| Method | Endpoint | Description |
+|---|---|---|
+| GET | `/api/v1/health` | Checks if the backend API is running. |
+| POST | `/api/v1/sessions` | Authenticates a user and creates a login session. |
+| GET | `/api/v1/users/me` | Retrieves the profile of the authenticated user. |
+
+For detailed endpoint specifications, request and response examples, and the Events API design, see the [API Specification](docs/API-SPEC.md).
+
+## Screenshots
+
+### Postman API Tests
+
+- [Health Check](screenshots/postman-health.png)
+- [Successful Login](screenshots/postman-login-200.png)
+- [Failed Login](screenshots/postman-login-401.png)
+- [Unauthorized Profile Access](screenshots/postman-me-401.png)
+
+### Frontend Login (360px)
+
+- [Login Failed](screenshots/login-fail-360.png)
+- [Login Successful](screenshots/login-success-360.png)
 
 ## Rules
 
+### Part 1 – Mobile-First CSS
 - Edit only the CSS files in `src/styles/` (one member = one file). Do not edit `reset.css`.
 - Plain CSS only. No Tailwind, Bootstrap, Material UI, styled-components, or any UI library.
 - Phone styles first (no media query), then `min-width` queries only. Never `max-width`.
 - Do not edit the `.tsx` files or rename classes. If you must, tell the group first.
 
+### Part 2 – Backend and Frontend Integration
+- Follow the assigned member responsibilities when editing backend and frontend files.
+- Use the required API endpoints and maintain the agreed project structure.
+- Keep actual `.env` files and secrets out of GitHub. Commit only `.env.example` files.
+- Test the backend and frontend before submission.
+- 
 ## Group information (fill in)
 
 | Item | Your answer |
