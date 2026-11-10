@@ -130,7 +130,7 @@ For detailed endpoint specifications, request and response examples, and the Eve
 |---|---|---|---|---|---|
 | 1 (Leader) | Precious Mae D. Dala | preciousmaedala | `base.css` | Created mobile-first and responsive page layouts | Set up the Express backend, environment configuration, demo login, and health endpoint. |
 | 2 | Jasson Lumacad | jassonlumacad | `nav.css` | Styled the mobile-first navigation bar and footer in nav.css |
-| 3 | Janel Bactong | janelbactong | `form.css` | Built the login card and form (Flexbox) |
+| 3 | Janel Bactong | janelbactong | `form.css` | Built the login card and form (Flexbox) | Connected the login page to the API with Loading, Success and Error states, a Welcome screen, and Log out. |
 
 ## Experiment 0: the page without the viewport tag
 
